@@ -1,0 +1,5 @@
+com\kgisl\springbootdemo\entity\Car.class
+com\kgisl\springbootdemo\repository\CarRepository.class
+com\kgisl\springbootdemo\SpringbootdemoApplication.class
+com\kgisl\springbootdemo\controller\CarController.class
+com\kgisl\springbootdemo\service\CarService.class

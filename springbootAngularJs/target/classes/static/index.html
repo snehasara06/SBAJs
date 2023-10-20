@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>First AngularJS Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="myController.js"></script>
+    <script src="myService.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script type="text/javascript" scr="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+</head>
+<!-- <body ng-controller="myController"> 
+   {{cars}}
+    <ul>
+        <li ng-repeat="car in cars">
+            <span ng-bind="car.name"></span> 
+             <button ng-click="editItem(item)">Edit</button>
+            <button ng-click="deleteItem(item)">Delete</button>
+        </li>
+    </ul>
+     <form ng-submit="addCar()">
+        <label>Name:</label>
+        <input type="text" ng-model="currentcar.name" required><br>
+        
+        <button type="submit">Save</button>
+    </form>
+</body>  -->
+<body ng-controller="myController"> 
+   
+    <ul>
+        <li ng-repeat="car in cars">
+            <span ng-bind="car.name"></span> - <span ng-bind="car.id"></span> 
+             <button ng-click="editItem(item)">Edit</button>
+            <button ng-click="deleteItem(item)">Delete</button>
+        </li>
+    </ul>
+     <form ng-submit="addCar()">
+        <label>Name:</label>
+        <input type="text" ng-model="currentItem.name" required><br>
+
+        <label>Model:</label>
+        <input type="text" ng-model="currentItem.model" required><br>
+        <label>FuelType:</label>
+        <input type="text" ng-model="currentItem.fuelType" required><br>
+        <label>CarType:</label>
+        <input type="text" ng-model="currentItem.carType" required><br>
+        <label>Price:</label>
+        <input type="text" ng-model="currentItem.price" required><br>
+        <label>Seater:</label>
+        <input type="text" ng-model="currentItem.seater" required><br>
+        <label>Color:</label>
+        <input type="text" ng-model="currentItem.color" required><br>
+        <label>Transmission:</label>
+        <input type="text" ng-model="currentItem.transmission" required><br>
+        <label>Year:</label>
+        <input type="text" ng-model="currentItem.year" required><br>
+        <!-- // id
+        // name
+        // model
+        // fuelType
+        // carType
+        // price
+        // seater
+        // color
+        // transmission
+        // year -->
+
+        <button type="submit">Save</button>
+    </form>
+</body> 
+</html> 
